@@ -1,8 +1,10 @@
-import React from "react";
-import Home from "./components/Home";
-
+import React, { useEffect, useState } from "react";
+import SlideShow from "./components/SlideShow";
+import SortByInputSearch from "./components/SortByInputSearch";
 import SortingArray from "./components/SortingArray";
+
 const App = () => {
+  const [data, setData] = useState([]);
   let objData = [
     {
       title: "A Message To Our Customer",
@@ -35,7 +37,22 @@ const App = () => {
       date: "2010-12-31",
     },
   ];
-  return <Home />;
+  useEffect(() => {
+    const dataFetch = async () => {
+      try {
+        const data = await fetch("https://jsonplaceholder.typicode.com/users");
+        const dataFinal = await data.json();
+        if (!dataFinal) {
+          throw new Error("error kamu ini");
+        }
+        setData(dataFinal);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    dataFetch();
+  }, []);
+  return <SortByInputSearch data={data} />;
 };
 
 export default App;
