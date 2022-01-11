@@ -222,3 +222,5 @@
 // LIFECYCLE COMPONENT CLASS
 // componentWillMount() componentDidMount() shouldComponentUpdate() componentDidUpdate() componentWillUnmount() 
 
+// AKU CINTA CODING
+
