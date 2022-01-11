@@ -177,7 +177,7 @@
 // }
 // console.log(jump);
 
-// #7 COMPONENT shouldComponentUpdate
+// #13 COMPONENT shouldComponentUpdate
 // class OnlyEvens extends React.Component {
 //   constructor(props) {
 //     super(props);
