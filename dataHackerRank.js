@@ -93,8 +93,7 @@
 //   }
 // }
 
-<<<<<<< HEAD
-// # 8 (PART I) PENCARIAN ELEMENT ARR YG SAMA
+// # 8 (PART I  (pile of socks)) PENCARIAN ELEMENT ARR YG SAMA
 // const arr = [1, 1, 3, 3, 5, 5, 7, 8];
 // let countObj = {};
 // // disini countObj dapat memberitahu secara otomatis (jumlah/count) int dalam element int[ARR]
@@ -105,7 +104,7 @@
 
 // console.log(countObj[8]);
 
-// #9 (PART II)MENGHITUNG JUMLAH int YANG SAMA dalam ELEMENT array
+// #8 (PART II)MENGHITUNG JUMLAH int YANG SAMA dalam ELEMENT array
 // const occurrences = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4].reduce(function (acc, curr) {
 //   return acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc;
 // }, {});
@@ -113,7 +112,7 @@
 //   console.log(occurrences[data]);
 // }
 
-// #10(part III) menghitung nilai yang sama dalam sebuah el arr
+// #8 (part III) menghitung nilai yang sama dalam sebuah el arr
 // const pairsKaosKaki = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 // const n = 9;
 // const sort = pairsKaosKaki.sort((a, b) => a - b);
@@ -127,7 +126,7 @@
 // }
 // console.log(pairs);
 
-// #11 function countingValleys(steps, path) {
+// #9 function countingValleys(steps, path) {
 //   let valleys = 0;
 //   let altitude = 0;
 //   for (let i = 0; i < steps; i++) {
@@ -147,7 +146,7 @@
 // }
 // console.log(countingValleys(8, "UDDDUDUU"));
 
-// #12(PART I) JUMPING TO THE CLOUDS
+// #10(PART I) JUMPING TO THE CLOUDS
 // const clouds = [0, 0, 1, 0, 0, 1, 0];
 // const jumpingClouds = () => {
 //   let stepsArray = [];
@@ -163,7 +162,7 @@
 //   }
 //   return stepsArray.length;
 // };
-// PART 2
+// #10 PART 2
 // for (let i = 0; i < clouds.length; i++) {
 //   if (clouds[i + 2] === 0) {
 //     jump++;
@@ -176,8 +175,7 @@
 //   }
 // }
 // console.log(jump);
-
-// #13 COMPONENT shouldComponentUpdate
+// #11 COMPONENT shouldComponentUpdate
 // class OnlyEvens extends React.Component {
 //   constructor(props) {
 //     super(props);
@@ -220,7 +218,37 @@
 // }
 
 // LIFECYCLE COMPONENT CLASS
-// componentWillMount() componentDidMount() shouldComponentUpdate() componentDidUpdate() componentWillUnmount() 
+// componentWillMount() componentDidMount() shouldComponentUpdate() componentDidUpdate() componentWillUnmount()
+// abaabaabaa
 
-// AKU CINTA CODING
-
+// #12 PART(1) REPEATED STRING but FAILED
+// function repeatedString() {
+//   let s = "aba";
+//   let n = 10;
+//   const strLen = s.length;
+//   let counter = 0;
+//   //   STEP 1
+//   const multiplier = Math.floor(n / strLen);
+//   for (let i = 0; i < strLen; i++) {
+//     if (s[i] === "a") {
+//       counter++;
+//     }
+//   }
+//   counter *= multiplier;
+//   //   step 2
+//   const residualStrLen = n - strLen * multiplier;
+//   for (let i = 0; i < residualStrLen; i++) {
+//     if (s[i] === "a") {
+//       counter++;
+//     }
+//   }
+//   console.log(counter);
+// }
+// repeatedString();
+// #12 PART II REPEATED STIRING
+// const aba = "aba";
+// const n = 10;
+// let akurasi = aba.split("a").length - 1;
+// let max = Math.floor(n / aba.length);
+// let totalAkurasi = akurasi * max;
+// totalAkurasi += aba.slice(0, n % aba.length).split("a").length - 1;
