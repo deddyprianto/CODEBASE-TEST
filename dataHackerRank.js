@@ -92,3 +92,86 @@
 //     console.log(i);
 //   }
 // }
+
+// # 8 (PART I) PENCARIAN ELEMENT ARR YG SAMA
+// const arr = [1, 1, 3, 3, 5, 5, 7, 8];
+// let countObj = {};
+// // disini countObj dapat memberitahu secara otomatis (jumlah/count) int dalam element int[ARR]
+
+// for (const num of arr) {
+//   countObj[num] = countObj[num] ? countObj[num] + 1 : 1;
+// }
+
+// console.log(countObj[8]);
+
+// #9 (PART II)MENGHITUNG JUMLAH int YANG SAMA dalam ELEMENT array
+// const occurrences = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4].reduce(function (acc, curr) {
+//   return acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc;
+// }, {});
+// for (const data in occurrences) {
+//   console.log(occurrences[data]);
+// }
+
+// #10(part III) menghitung nilai yang sama dalam sebuah el arr
+// const pairsKaosKaki = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+// const n = 9;
+// const sort = pairsKaosKaki.sort((a, b) => a - b);
+// let pairs = 0;
+
+// for (let i = 0; i < n - 1; i++) {
+//   if (sort[i] === sort[i - 1]) {
+//     pairs++;
+//     i += 1;
+//   }
+// }
+// console.log(pairs);
+
+// #11 function countingValleys(steps, path) {
+//   let valleys = 0;
+//   let altitude = 0;
+//   for (let i = 0; i < steps; i++) {
+//     // if path is 'D' we decrement the altitide
+//     if (path[i] == "D") {
+//       altitude--;
+//     } else {
+//       // this means a down and up movement suggesting a valley passed
+//       if (altitude == -1) {
+//         valleys++;
+//       }
+//       // else we increment the altititude
+//       altitude++;
+//     }
+//   }
+//   return valleys;
+// }
+// console.log(countingValleys(8, "UDDDUDUU"));
+
+// #12(PART I) JUMPING TO THE CLOUDS
+// const clouds = [0, 0, 1, 0, 0, 1, 0];
+// const jumpingClouds = () => {
+//   let stepsArray = [];
+//   let i = 0;
+//   while (i < c.length - 1) {
+//     if (i + 2 < c.length && c[i + 2] === 0) {
+//       stepsArray.push(c[i + 2]);
+//       i += 2;
+//     } else {
+//       stepsArray.push(c[i + 1]);
+//       i += 1;
+//     }
+//   }
+//   return stepsArray.length;
+// };
+// PART 2
+// for (let i = 0; i < clouds.length; i++) {
+//   if (clouds[i + 2] === 0) {
+//     jump++;
+//     i += 2;
+//   } else if (clouds[i + 1] === 0) {
+//     jump++;
+//     i++;
+//   } else {
+//     i++;
+//   }
+// }
+// console.log(jump);

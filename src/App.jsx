@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ClassCop from "./components/ClassCop";
 import SlideShow from "./components/SlideShow";
 import SortByInputSearch from "./components/SortByInputSearch";
 import SortingArray from "./components/SortingArray";
@@ -37,6 +38,7 @@ const App = () => {
       date: "2010-12-31",
     },
   ];
+
   useEffect(() => {
     const dataFetch = async () => {
       try {
@@ -52,7 +54,8 @@ const App = () => {
     };
     dataFetch();
   }, []);
-  return <SortByInputSearch data={data} />;
+
+  return <ClassCop />;
 };
 
 export default App;
