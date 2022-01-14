@@ -252,3 +252,45 @@
 // let max = Math.floor(n / aba.length);
 // let totalAkurasi = akurasi * max;
 // totalAkurasi += aba.slice(0, n % aba.length).split("a").length - 1;
+
+
+// #13 MENCARI ANGKA KE-3 TERBESAR DARI ARR
+// const numberArr = [1, 3, 4, 5, 10, 9, 6, 2, 7, 8];
+// const numberMax = [30, 28, 21, 25, 26, 27, 22, 23, 24, 29];
+// let inputNilai = 3;
+// const kurangkanPanjangArr = numberMax.length - inputNilai;
+// let score;
+// const sortArr = numberMax.sort((a, b) => a - b);
+// for (let i = 0; i < numberArr.length; i++) {
+//   if (i + 1 === kurangkanPanjangArr) {
+//     score = sortArr[i];
+//   }
+// }
+
+// console.log(score);
+
+// // #14 INTERVIEW PREPARATION KIT => ARRAY
+// let arr = [
+//   [1, 1, 1, 0, 0, 0],
+//   [0, 1, 0, 0, 0, 0],
+//   [1, 1, 1, 0, 0, 0],
+//   [0, 0, 2, 4, 4, 0],
+//   [0, 0, 0, 2, 0, 0],
+//   [0, 0, 1, 2, 4, 0],
+// ];
+// let h = 0;
+// let array1 = [];
+// for (let i = 0; i < 4; i++) {
+//   for (let j = 0; j < 4; j++) {
+//     array1[h] =
+//       arr[i][j] +
+//       arr[i][j + 1] +
+//       arr[i][j + 2] +
+//       arr[i + 1][j + 1] +
+//       arr[i + 2][j] +
+//       arr[i + 2][j + 1] +
+//       arr[i + 2][j + 2];
+//     h++;
+//   }
+// }
+// console.log(array1.sort((a, b) => a - b)[15]);
