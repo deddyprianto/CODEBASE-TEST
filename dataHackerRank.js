@@ -294,3 +294,37 @@
 //   }
 // }
 // console.log(array1.sort((a, b) => a - b)[15]);
+
+// #15 FLATMAP array
+// const arr = [[1, 2], 12, [14, [12]]];
+// console.log(arr.flatMap((a) => a));
+
+// #16 find string with same value
+// const array = ["deddy", "prianto", "deddyy"];
+// console.log(new Set(array).size !== array.length);
+
+// #17 find duplicate number
+// const arry = [1, 2, 5, 1, 4, 2, 8, 3];
+// console.log(arry.filter((item,index) => arry.indexOf(item) != index))
+
+// #18 Find Duplicate String/Number using obj
+// const arr = ["a", "b", "c", "d", "e", "a", "b", "c", "f", "g", "h", "h", "h", "e", "a"]
+// const counts = {};
+// arr.forEach((x) => {
+//   counts[x] = (counts[x] || 0) + 1;
+// });
+// console.log(counts)
+
+//
+// So, by taking these steps,
+// Take the first element of the array…
+// Put in the back
+// Repeat this as many times as d says.
+// const data = [1, 2, 3, 4, 5];
+// function rotLeft(a, d) {
+//   while (d) {
+//     a.push(a.shift());
+//     d--;
+//   }
+//   return a;
+// }
