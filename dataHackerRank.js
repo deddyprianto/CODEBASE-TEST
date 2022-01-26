@@ -1,4 +1,4 @@
-// #1 Compare TRIPLETS
+﻿// #1 Compare TRIPLETS
 // const aliceArr = [17, 28, 30];
 // const bobArr =   [99, 16, 8];
 // let scoreAlice = 0,
@@ -199,6 +199,7 @@
 // let totalAkurasi = akurasi * max;
 // totalAkurasi += aba.slice(0, n % aba.length).split("a").length - 1;
 
+
 // #13 MENCARI ANGKA KE-3 TERBESAR DARI ARR
 // const numberArr = [1, 3, 4, 5, 10, 9, 6, 2, 7, 8];
 // const numberMax = [30, 28, 21, 25, 26, 27, 22, 23, 24, 29];
@@ -252,7 +253,11 @@
 // const arry = [1, 2, 5, 1, 4, 2, 8, 3];
 // console.log(arry.filter((item,index) => arry.indexOf(item) != index))
 
+
 // #18 Find Duplicate String
+
+// #18 Find Duplicate String/Number using obj
+
 // const arr = ["a", "b", "c", "d", "e", "a", "b", "c", "f", "g", "h", "h", "h", "e", "a"]
 // const counts = {};
 // arr.forEach((x) => {
@@ -260,10 +265,18 @@
 // });
 // console.log(counts)
 
+
 // So, by taking these steps,
 // 1.Take the first element of the array…
 // 2.Put in the back
 // 3.Repeat this as many times as d says.
+=======
+//
+// So, by taking these steps,
+// Take the first element of the array…
+// Put in the back
+// Repeat this as many times as d says.
+
 // const data = [1, 2, 3, 4, 5];
 // function rotLeft(a, d) {
 //   while (d) {
