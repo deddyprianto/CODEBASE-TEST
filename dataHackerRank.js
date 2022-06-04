@@ -285,3 +285,21 @@
 //   }
 //   return a;
 // }
+//   UBAH INDEX PERTAMA MENJADI STIRING CUSTOM DAN UBAH ELEMENT ARRAY YG DUPLICATE
+//  {data.map((item, i) => {
+//           let itemsData = item.slice();
+//           let tmpIndex = [];
+//           itemsData.splice(0, 1, `Baris${i + 1}`);
+//           let dataFinal = itemsData.sort((a, b) => a - b);
+//           dataFinal.forEach((item, i) => {
+//             if (i > 0) {
+//               if (dataFinal[i - 1] === item) {
+//                 tmpIndex.push(i);
+//               }
+//             }
+//           });
+//           tmpIndex.forEach((item) => {
+//             dataFinal[item] = "Before";
+//           });
+//           return <li className="text-center" key={i}>{`${dataFinal},`}</li>;
+//         })}
